@@ -1,9 +1,10 @@
+# for creating automated documents from template doc
 from docxtpl import DocxTemplate, InlineImage
 
 personName = ['Akash', 'Ankush', 'Aayushi', 'Mohit', 'Shlok', 'Aastha', 'Pooja']
 
 for pItr, p in enumerate(personName):
-    doc = DocxTemplate("inviteTemp.docx")
+    doc = DocxTemplate("inviteTemp.docx")  # template document
     context = {
         "todayStr": "21/12/2021",
         "recipientName": p,
